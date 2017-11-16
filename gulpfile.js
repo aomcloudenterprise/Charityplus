@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('images', function() {
-    gulp.src("src/images/**/*.+(png|jpg)")
+    gulp.src("src/images/**/*.+(png|jpg|jpeg)")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/images"));
 });
