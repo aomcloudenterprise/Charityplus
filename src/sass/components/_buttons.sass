@@ -1,0 +1,70 @@
+.button
+    margin-top: 70px
+    padding: 8px 20px
+    background: $primary-color
+    border-radius: 0
+    text-transform: uppercase
+    font-family: $primary-font
+    font-size: 10px
+    color: $secondary-text-color
+    transition: .3s
+
+    &:hover
+        color: $secondary-text-color
+        background: darken($primary-color, 10%)
+
+    &--border
+        margin: 10px 0
+        padding: 5px 10px
+        background: transparent
+        border: 1px solid $primary-color
+
+        &:hover
+            background: $primary-color
+
+.header-button
+    width: 90px
+    height: 90px
+    margin-bottom: 100px
+    float: right
+    border-radius: 50%
+    background: $primary-color
+    position: relative
+    transition: .3s
+
+    &:hover
+        background: darken($primary-color, 10%)
+
+    &:after
+        content: ''
+        width: 90%
+        height: 90%
+        position: absolute
+        top: 5%
+        left: 5%
+        border-radius: 50%
+        border: 1px dashed #ffffff
+
+    &__icon
+        width: 22px
+        margin-top: 10px
+
+    &__text
+        display: block
+        margin-top: 8px
+        text-transform: uppercase
+        font-family: $primary-font
+        font-size: 14px
+        line-height: 1
+        color: $secondary-text-color
+
+        &--small
+            margin-top: 2px
+            font-size: 10px
+
+@media (min-width: 768px)
+    .button
+        font-size: 12px
+
+        &--border
+            margin: 20px 0

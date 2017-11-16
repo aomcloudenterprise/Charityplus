@@ -1,0 +1,24 @@
+.contact-info
+    background: #ebebeb
+
+    &__col
+        padding: 10px 0
+        text-align: center
+
+    &__icon
+        display: inline-block
+        width: 15px
+        height: 15px
+
+    &__link
+        font-family: $primary-font
+        font-size: 10px
+        color: #797b7a
+        transition: .3s
+
+        &:hover
+            color: $primary-text-color
+
+@media (min-width: 576px)
+    .contact-info__col:nth-child(1)
+        text-align: right
